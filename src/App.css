@@ -1,0 +1,423 @@
+* {
+  font-family: "Antonio", "League Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-image: url(./assets/Path/Circles.png);
+  background-size: cover;
+  background-color: #070724;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.head_main_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 6.4%;
+  border-bottom: 1px solid #393950;
+}
+
+.page_name {
+  font-size: 28px;
+  font-family: Antonio;
+  font-weight: 400;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hamburger_icon {
+  width: 24px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.planet_side_menu {
+  padding: 0 6.4%;
+  transition: all 0.5s;
+}
+
+.planet_bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #393950;
+  height: 65px;
+  cursor: pointer;
+}
+
+.planet_circle_in_side_menu {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.planet_name_side_menu {
+  position: absolute;
+  left: 45px;
+}
+
+.arrow_side_menu {
+  position: absolute;
+  right: 10px;
+  color: #393950;
+}
+
+.planet_list > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.4%;
+  width: 100%;
+  list-style: none;
+  height: 50px;
+  border-bottom: 1px solid #393950;
+}
+
+.planet_list > ul > li {
+  font-size: 9px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.929px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 52px;
+  width: 24.5%;
+  opacity: 0.5;
+  transition: all 0.1s;
+}
+
+main,
+.main_information {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  gap: 28px;
+  padding: 0 6.4% 47px;
+}
+
+.planet_cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 53%;
+  margin-top: 54px;
+}
+
+.planet_img {
+  max-width: 100%;
+}
+
+.planet_surface_img {
+  position: absolute;
+  bottom: 0px;
+  transform: translate(0px, 40%);
+  width: 35.6%;
+}
+
+.planetname_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.planet_name {
+  font-size: 40px;
+  font-family: Antonio;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.planetname_description {
+  margin-top: 67px;
+}
+
+.planetname_description > p {
+  font-size: 15px;
+  font-family: Spartan;
+  font-weight: 400;
+  text-align: center;
+  line-height: 22px;
+}
+
+.planetname_description > span {
+  font-size: 12px;
+  font-family: Spartan;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fact_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 24px 13px 24px;
+  border: 1px solid #393950;
+}
+
+.fact_container > p {
+  font-size: 8px;
+  font-family: Spartan;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.727px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.fact_container > h2 {
+  font-size: 20px;
+  font-family: Antonio;
+  font-weight: 400;
+  text-align: right;
+  letter-spacing: -0.75px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (width >= 768px) {
+  body {
+    background-image: url(./assets/Path/Tab_Circles.png);
+  }
+
+  .head_main_part {
+    justify-content: center;
+    padding: 32px 0;
+    border: none;
+  }
+
+  .hamburger_icon {
+    display: none;
+  }
+
+  .planet_list > ul > li {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  main {
+    padding: 0 4.7% 36px;
+  }
+
+  .planet_information_etc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .planetname_description {
+    align-items: baseline;
+    width: 48.2%;
+    margin: 0;
+  }
+
+  .planet_name {
+    font-size: 48px;
+    text-align: start;
+  }
+
+  .planetname_description > p {
+    text-align: start;
+  }
+
+  .Planet_interactive_info_block_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+  }
+
+  .interactive_info_block {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #393950;
+    cursor: pointer;
+  }
+
+  .interactive_info_block:hover {
+    background-color: #313148;
+  }
+
+  .interactive_info_block > span,
+  .interactive_info_block > p {
+    font-size: 9px;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.929px;
+    text-transform: uppercase;
+  }
+
+  .interactive_info_block > span {
+    opacity: 0.5;
+  }
+
+  .facts {
+    flex-direction: row;
+  }
+
+  .fact_container {
+    flex-direction: column;
+    align-items: baseline;
+    padding: 15px 16px;
+    width: 25%;
+  }
+
+  .fact_container > p {
+    font-size: 8px;
+    font-family: Spartan;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.727px;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .fact_container > h2 {
+    font-size: 24px;
+    text-align: unset;
+    letter-spacing: -0.9px;
+  }
+}
+
+@media (width >= 1300px) {
+  body {
+    background-image: url(./assets/Path/Desktop_Circles.png);
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.9%;
+    border-bottom: 1px solid #393950;
+  }
+
+  .head_main_part {
+    padding: 0;
+  }
+
+  .page_name {
+    font-size: 28px;
+    letter-spacing: -1.05px;
+  }
+
+  .planet_list {
+    width: 49%;
+  }
+
+  .planet_list > ul {
+    border: none;
+    height: 85px;
+  }
+
+  .planet_list > ul > li {
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 85px;
+  }
+
+  main {
+    gap: 76px;
+    padding: 0 10.6% 56px 11.9%;
+  }
+
+  .main_information {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .planet_surface_img {
+    transform: translate(0px, 30%);
+    width: 27.6%;
+  }
+
+  .planet_information_etc {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: baseline;
+    gap: 40px;
+    width: 31.4%;
+  }
+
+  .planetname_description,
+  .Planet_interactive_info_block_cont {
+    width: 100%;
+  }
+
+  .planetname_description {
+    gap: 23px;
+  }
+
+  .planetname_description > .planet_name {
+    font-size: 80px;
+  }
+
+  .planetname_description > p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .planetname_description > span {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 26px;
+  }
+
+  .interactive_info_block {
+    gap: 28px;
+    height: 48px;
+    padding-left: 28px;
+  }
+
+  .interactive_info_block > span,
+  .interactive_info_block > p {
+    font-size: 12px;
+    letter-spacing: 2.571px;
+  }
+
+  .fact_container {
+    padding: 20px 0 27px 23px;
+  }
+
+  .fact_container > p {
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .fact_container > h2 {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+  }
+}
