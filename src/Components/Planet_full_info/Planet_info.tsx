@@ -1,4 +1,4 @@
-import Wiki_Icon from "../../assets/Icons/Wiki_Arrow.png";
+import Wiki_Icon from "../../../public/assets/Icons/Wiki_Arrow.png";
 import Planet_facts from "./Planet_facts";
 import Planet_interactive_info_block from "./Planet_interactive_info_block";
 const Planet_info = ({
@@ -24,7 +24,11 @@ const Planet_info = ({
       <div className="main_information">
         <div className="planet_cont">
           <img className="planet_img" src={planet_img_src} alt="Planet Img" />
-          <img className="planet_surface_img" src={planet_surface_img_src} alt="" />
+          <img
+            className="planet_surface_img"
+            src={planet_surface_img_src}
+            alt=""
+          />
         </div>
         <div className="planet_information_etc">
           <div className="planetname_description">
